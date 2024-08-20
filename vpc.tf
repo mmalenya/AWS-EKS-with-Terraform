@@ -6,6 +6,7 @@ module "vpc" {
   nat_gateway          = true
   enable_dns_support   = true
   enable_dns_hostnames = true
+  cluster_name    = var.cluster_name
 
   public_subnet_count  = 3
   private_subnet_count = 3
